@@ -1,1 +1,1 @@
-# findchangeset-plugin
+## Basic JOSM plugin to find the changes by id of changeset
