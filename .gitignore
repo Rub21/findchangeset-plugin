@@ -1,3 +1,5 @@
 # Some Files #
 ###################
 *.class
+nbproject
+build
