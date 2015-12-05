@@ -1,5 +1,5 @@
 
-# Basic example to build in a JSON Plugin
+# Basic example to build in a JOSM Plugin
 
 This a brief introduction how to build a plugin , which will find the osm objects per id of changeset;
 
@@ -8,7 +8,6 @@ Ref : https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
 #### Requirement
 
 - [SVN](https://subversion.apache.org/)
-- [Netbeans](https://netbeans.org/) 8.0 or other recent version.
 - [ANT](http://ant.apache.org/)
 
 
