@@ -64,6 +64,7 @@ Open your `findchangeset-plugin/build.xml` file and add the basic configuration,
     <property name="plugin.description" value="Find changes in the actual layer by id of changeset"/>
     <property name="plugin.icon" value="images/icontofix.png"/>
     <property name="plugin.link" value="https://github.com/rub21/findchangeset-plugin"/>
+    <property name="plugin.canloadatruntime" value="true"/>
     <import file="../build-common.xml"/>  
 </project>
 
@@ -104,7 +105,6 @@ public class FindChangesetPlugin  extends Plugin{
         }
     }
 }
-
 ```
 
 
@@ -133,7 +133,6 @@ import org.openstreetmap.josm.gui.SideButton;
 import org.openstreetmap.josm.gui.dialogs.ToggleDialog;
 import org.openstreetmap.josm.gui.layer.OsmDataLayer;
 import static org.openstreetmap.josm.gui.mappaint.mapcss.ExpressionFactory.Functions.tr;
-import org.openstreetmap.josm.tools.ImageProvider;
 import org.openstreetmap.josm.tools.Shortcut;
 
 public class FindChangesetDialog extends ToggleDialog {
@@ -142,8 +141,8 @@ public class FindChangesetDialog extends ToggleDialog {
 
     public FindChangesetDialog() {
 
-        super(tr("Find Ways"), "icontofix", tr("Open Find ways window."),
-                Shortcut.registerShortcut("tool:findways", tr("Toggle: {0}", tr("Find Ways")),
+        super(tr("Find Changeset"), "icontofix", tr("Open Find Changeset window."),
+                Shortcut.registerShortcut("tool:findchangeset", tr("Toggle: {0}", tr("Find Changeset")),
                         KeyEvent.VK_F, Shortcut.CTRL_SHIFT), 75);
 
         JPanel valuePanel = new JPanel(new GridLayout(1, 1));
@@ -154,9 +153,8 @@ public class FindChangesetDialog extends ToggleDialog {
 
         button = new SideButton(new AbstractAction() {
             {
-                putValue(NAME, tr("Name of button"));
-                putValue(SMALL_ICON, ImageProvider.get("mapmode", "skip.png"));
-                putValue(SHORT_DESCRIPTION, tr("Skip Error"));
+                putValue(NAME, tr("Find"));               
+                putValue(SHORT_DESCRIPTION, tr("Find"));
             }
 
             @Override

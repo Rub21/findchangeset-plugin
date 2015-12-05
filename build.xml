@@ -5,7 +5,8 @@
     <property name="plugin.author" value="Rub21"/>
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.findchangeset.FindChangesetPlugin"/>
     <property name="plugin.description" value="Find changes in the actual layer by id of changeset"/>
-    <property name="plugin.icon" value="images/icontofix.png"/>
+    <property name="plugin.icon" value="images/iconfindchangeset.png"/>
     <property name="plugin.link" value="https://github.com/rub21/findchangeset-plugin"/>
+    <property name="plugin.canloadatruntime" value="true"/>
     <import file="../build-common.xml"/>  
 </project>
