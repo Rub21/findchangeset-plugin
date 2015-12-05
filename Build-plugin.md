@@ -71,7 +71,8 @@ Open your `findchangeset-plugin/build.xml` file and add the basic configuration,
 ```
 
 **Note:** 
-Is necessary add a image in  `images` folder on this case we will use the [image](https://raw.githubusercontent.com/JOSM/tofix-plugin/master/images/icontofix.png) from [tofix-plugin](https://github.com/JOSM/tofix-plugin)
+
+Is necessary add a icon in  `images`, 'images/dialogs' and 'images/mapmode' folder, we can add the same icon on the tree folders, in this case we will use the [tofix-plugin](https://github.com/JOSM/tofix-plugin) [icon](https://raw.githubusercontent.com/JOSM/tofix-plugin/master/images/icontofix.png) 
 
 #### Start Coding
 
