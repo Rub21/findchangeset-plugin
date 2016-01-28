@@ -1,7 +1,7 @@
 
-# Build a basic plugin for JOSM
+# Building a basic plugin for JOSM
 
-This a brief introduction how to build a plugin for JOSM, which will find the OSM objects by id of changeset;
+This a brief introduction  on building  a plugin for JOSM, which will find the OSM objects by `id` of changeset;
 
 Ref : https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
 
@@ -11,7 +11,7 @@ Ref : https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
 - [ANT](http://ant.apache.org/)
 
 
-#### Build latest JOSM version. 
+#### Building the latest JOSM version. 
 
 - Clone  the repository
 
@@ -30,7 +30,7 @@ $ cd josm/core/ && ant
 It will create the file josm/core/dist/josm-custom.jar.  this is usually the latest version.
 
 
-#### Crete first files for you plugin
+#### Creating the first files for you plugin
 
 - Make a copy from `00_plugin_dir_template` , this is the basic template to start a plugin.
 
@@ -40,7 +40,7 @@ $ cp -r plugins/00_plugin_dir_template/ plugins/findchangeset-plugin
 
 ```
 
-- Create the package when we are going to add the Java classes.
+- Create the package when you are going to add the Java classes.
 
 ```
 $ mkdir -p plugins/findchangeset-plugin/src/org/openstreetmap/josm/plugins/findchangeset
@@ -48,10 +48,9 @@ $ mkdir -p plugins/findchangeset-plugin/src/org/openstreetmap/josm/plugins/findc
 ```
 
 
-#### Configure the build.xml file
+#### Configuring the build.xml file
 
-Open your `findchangeset-plugin/build.xml` file and add the basic configuration, the configuration include settings for start the plugin without restart JOSM.
-
+Open your `findchangeset-plugin/build.xml` file and add the basic configuration, which includes settings for starting the plugin without restarting JOSM.
 
 
 ```
@@ -71,13 +70,13 @@ Open your `findchangeset-plugin/build.xml` file and add the basic configuration,
 ```
 
 **Note:** 
-We have to add a image in  `images` folder on this case we will use the [image](https://raw.githubusercontent.com/JOSM/tofix-plugin/master/images/icontofix.png) from [tofix-plugin](https://github.com/JOSM/tofix-plugin)
+You have to add images to the `images` folder in this case we will use the [image](https://raw.githubusercontent.com/JOSM/tofix-plugin/master/images/icontofix.png) from [tofix-plugin](https://github.com/JOSM/tofix-plugin)
 
-#### Start Coding
+#### Starting coding
 
-- Create a java class called `FindChangesetPlugin.java` in `org.openstreetmap.josm.plugins.findchangeset` and copy and paste the below code on it.
+- Create a java class called `FindChangesetPlugin.java` in `org.openstreetmap.josm.plugins.findchangeset` and copy and paste the code below.
 
-The `FindWaysPlugin.java` class is the main class where the plugin is going to start the execution.
+The  file `FindWaysPlugin.java` is the main class from  where the plugin  will start the execution.
 
 
 ```
@@ -108,9 +107,9 @@ public class FindChangesetPlugin  extends Plugin{
 ```
 
 
-- Create a java class called `FindChangesetDialog.java` in `org.openstreetmap.josm.plugins.findchangeset` and copy and paste the below code on it.
+- Create a java class called `FindChangesetDialog.java` in `org.openstreetmap.josm.plugins.findchangeset` and copy and paste the code below .
 
-The `FindChangesetDialog.java` the class will create a window in the sidebar of JOSM.
+The file `FindChangesetDialog.java` will create a window in the sidebar of JOSM.
 
 ```
 package org.openstreetmap.josm.plugins.findchangeset;
@@ -195,7 +194,7 @@ $ ant install
 
 ```
 
-Open your JOSM and active the plugin, in `Edit/preferences` the plugin will active without restart JOSM
+Open your JOSM and activate the plugin, in `Edit/preferences` the plugin will run without restarting JOSM
 
 #### Result
 
