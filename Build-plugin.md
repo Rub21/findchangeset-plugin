@@ -199,8 +199,3 @@ Open your JOSM and activate the plugin, in `Edit/preferences` the plugin will ru
 #### Result
 
 ![plugin-result2](https://cloud.githubusercontent.com/assets/1152236/11529300/1ded5404-9912-11e5-8933-631db0349f69.gif)
-
-
-## How to run the plugin in NetBeans
-
-https://www.youtube.com/watch?v=kDSP-eol8to
