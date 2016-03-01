@@ -70,7 +70,7 @@ Open your `findchangeset-plugin/build.xml` file and add the basic configuration,
 ```
 
 **Note:** 
-You have to add images to the `images` folder in this case we will use the [image](https://raw.githubusercontent.com/JOSM/tofix-plugin/master/images/icontofix.png) from [tofix-plugin](https://github.com/JOSM/tofix-plugin)
+You have to add images to the [`images`](https://github.com/Rub21/findchangeset-plugin/blob/master/images/iconfindchangeset.png) , [`mapmode`](https://github.com/Rub21/findchangeset-plugin/blob/master/images/mapmode/iconfindchangeset.png) and [`dialogs`](https://github.com/Rub21/findchangeset-plugin/blob/master/images/dialogs/iconfindchangeset.png) folder in this case we will use the [image](https://raw.githubusercontent.com/JOSM/tofix-plugin/master/images/icontofix.png) from [tofix-plugin](https://github.com/JOSM/tofix-plugin)
 
 #### Starting coding
 
